@@ -9,14 +9,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // Typing Animation
     // ============================================
     const typingText = document.querySelector('.typing-text');
-    const phrases = [
-        'Firmware Developer',
-        'Embedded Systems Engineer',
-        'Hardware Enthusiast',
-        'Low-Level Programmer',
-        'Tech Explorer'
+const phrases = [
+           'Future Engineer',    
+    'Firmware Developer',
+    'Coding Freak?',
+ 
+        'Computer Engineering Student',
+        'Ex - IT Infrastructure Intern',
+       
+        'Embedded Systems Enthusiast',
+
     ];
-    
     let phraseIndex = 0;
     let charIndex = 0;
     let isDeleting = false;

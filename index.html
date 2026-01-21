@@ -14,6 +14,7 @@
             <span class="terminal-prompt">&gt;</span> anchal<span class="blink">_</span>
         </div>
         <ul class="nav-links">
+            <li><a href ="#home">home()</a></li>
             <li><a href="#about">about()</a></li>
             <li><a href="#skills">skills()</a></li>
             <li><a href="#projects">projects()</a></li>
@@ -35,12 +36,13 @@
             <div class="hero-title">
                 <span class="typing-text"></span><span class="cursor">|</span>
             </div>
+            <!--
             <p class="hero-description">
                 Computer Engineering student passionate about 
                 <span class="highlight">firmware</span>, 
                 <span class="highlight">embedded systems</span>, and 
                 <span class="highlight">low-level programming</span>.
-            </p>
+            </p> -->
             <div class="hero-buttons">
                 <a href="#projects" class="btn btn-primary">View Projects</a>
                 <a href="#contact" class="btn btn-secondary">Get in Touch</a>
@@ -84,12 +86,12 @@
                     </p>
                     <p>
                         When I'm not debugging code or soldering circuits, you'll find me exploring 
-                        new technologies, contributing to open-source projects, or building something 
-                        that bridges the gap between the physical and digital worlds.
+                        new technologies, contributing to open-source projects, building something 
+                        that bridges the gap between the physical and digital worlds or playing badminton :))
                     </p>
                     <div class="about-stats">
                         <div class="stat">
-                            <span class="stat-number">10+</span>
+                            <span class="stat-number">5+</span>
                             <span class="stat-label">Projects</span>
                         </div>
                         <div class="stat">
@@ -115,209 +117,268 @@
 
     <!-- Skills Section -->
     <section class="section section-alt" id="skills">
-        <div class="container">
-            <h2 class="section-title"><span class="title-number">02.</span> skills()</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <div class="skill-icon">⚡</div>
-                    <h3>Languages</h3>
-                    <ul class="skill-list">
-                        <li>C / C++</li>
-                        <li>Python</li>
-                        <li>Assembly</li>
-                        <li>Verilog / VHDL</li>
-                        <li>Rust</li>
-                    </ul>
+    <div class="container">
+        <h2 class="section-title"><span class="title-number">02.</span> skills()</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <div class="skill-icon">⚡</div>
+                <h3>Languages</h3>
+                <ul class="skill-list">
+                    <li>C / C++ (Firmware) </li>
+                    <li>Python (Automation/Scripts) </li>
+                    <li>VHDL & Assembly (RISC-V) </li>
+                    <li>Java, Kotlin, & SQL </li>
+                    <li>TypeScript & JavaScript </li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <div class="skill-icon">🔧</div>
+                <h3>Embedded & Hardware</h3>
+                <ul class="skill-list">
+                    <li>ESP32 & BeagleBone-AI </li>
+                    <li>PCB Assembly & Soldering </li>
+                    <li>SPI, I2C, UART, MQTT </li>
+                    <li>Oscilloscopes & Logic Analyzers </li>
+                    <li>FPGA (Quartus II / ModelSim) </li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <div class="skill-icon">☁️</div>
+                <h3>IT & Cloud</h3>
+                <ul class="skill-list">
+                    <li>Azure Fundamentals (AZ-900) (in progress!!)</li>
+                    <li>Cisco 3500 Switches & VLANs </li>
+                    <li>Active Directory & IAM </li>
+                    <li>Network Security (Wireshark/Nmap) </li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <div class="skill-icon">💻</div>
+                <h3>Software & Tools</h3>
+                <ul class="skill-list">
+                    <li>Linux (Ubuntu/Debian) </li>
+                    <li>GDB & Valgrind </li>
+                    <li>Docker & Git </li>
+                    <li>Agile/Scrum Methodologies</li>
+                    <li>SolidWorks & AutoCAD </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="projects">
+    <div class="container">
+        <h2 class="section-title"><span class="title-number">03.</span> projects()</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="folder-icon">📁</div>
+                    <div class="project-links">
+                        <a href="https://github.com/anchalbadhwar13/Road_Rhythm" class="project-link" title="GitHub">
+                            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        </a>
+                    </div>
                 </div>
-                <div class="skill-category">
-                    <div class="skill-icon">🔧</div>
-                    <h3>Embedded & Hardware</h3>
-                    <ul class="skill-list">
-                        <li>ARM Cortex-M</li>
-                        <li>Arduino / ESP32</li>
-                        <li>Raspberry Pi</li>
-                        <li>FPGA Development</li>
-                        <li>PCB Design</li>
-                    </ul>
+                <h3 class="project-title">RoadRhythm Car Head Unit</h3>
+                <p class="project-description">
+                    Architected a modular embedded system using BeagleBone-AI to interface with accelerometer and temperature sensors. Developed drivers for LCD metadata and joystick controls using SPI and I2C protocols.
+                </p>
+                <ul class="project-tags">
+                    <li>BeagleBone-AI</li>
+                    <li>SPI / I2C</li>
+                    <li>Sensors</li>
+                    <li>C++</li>
+                </ul>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="folder-icon">📁</div>
                 </div>
-                <div class="skill-category">
-                    <div class="skill-icon">🛠️</div>
-                    <h3>Tools & Protocols</h3>
-                    <ul class="skill-list">
-                        <li>Git / GitHub</li>
-                        <li>UART / SPI / I2C</li>
-                        <li>JTAG / SWD</li>
-                        <li>Oscilloscope</li>
-                        <li>Logic Analyzer</li>
-                    </ul>
+                <h3 class="project-title">Smart Controller & OTA Engine</h3>
+                <p class="project-description">
+                    Implemented a failsafe Over-The-Air (OTA) firmware update mechanism using Dual-Bank Flash Partitioning. Designed a Bootloader Rollback system with hardware Watchdog Timers.
+                </p>
+                <ul class="project-tags">
+                    <li>ESP32</li>
+                    <li>MQTT</li>
+                    <li>OTA Updates</li>
+                    <li>Watchdog Timers</li>
+                </ul>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="folder-icon">📁</div>
                 </div>
-                <div class="skill-category">
-                    <div class="skill-icon">💻</div>
-                    <h3>Software</h3>
-                    <ul class="skill-list">
-                        <li>RTOS (FreeRTOS)</li>
-                        <li>Linux / Bash</li>
-                        <li>Docker</li>
-                        <li>CI/CD Pipelines</li>
-                        <li>Unit Testing</li>
-                    </ul>
+                <h3 class="project-title">CoinCoach: AI Crypto Platform</h3>
+                <p class="project-description">
+                    Engineered a real-time trading simulator with a $10K virtual balance and integrated a Gemini AI chatbot for financial guidance. Developed a risk analysis dashboard using live market data.
+                </p>
+                <ul class="project-tags">
+                    <li>Next.js 14</li>
+                    <li>TypeScript</li>
+                    <li>Gemini AI</li>
+                    <li>Tailwind CSS</li>
+                </ul>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="folder-icon">📁</div>
+                </div>
+                <h3 class="project-title">RISC-V Pipeline Simulator</h3>
+                <p class="project-description">
+                    Developed a cycle-accurate RISC-V CPU simulator in C with cache and hazard mitigation features. Utilized Valgrind for memory profiling and leak detection.
+                </p>
+                <ul class="project-tags">
+                    <li>C</li>
+                    <li>GCC</li>
+                    <li>Valgrind</li>
+                    <li>Computer Architecture</li>
+                </ul>
+            </div>
+            <div class="project-card">
+    <div class="project-header">
+        <div class="folder-icon">🍔</div>
+        <div class="project-links">
+            <a href="https://github.com/anchalbadhwar13" class="project-link" title="GitHub">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+        </div>
+    </div>
+    <h3 class="project-title">Campus-Cravings Delivery App</h3>
+    <p class="project-description">
+       Built a campus-focused food delivery app with real-time ordering and payments. Features a dual-purpose model where students earn while picking up food and uses Leaflet API for mapping delivery locations.
+    </p>
+    <ul class="project-tags">
+        <li>Kotlin</li>
+        <li>Android Studio</li>
+        <li>Firebase DB</li>
+        <li>Leaflet API</li>
+    </ul>
+</div>
+
+<div class="project-card">
+    <div class="project-header">
+        <div class="folder-icon">🎵</div>
+        <div class="project-links">
+            <a href="https://github.com/anchalbadhwar13" class="project-link" title="GitHub">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+        </div>
+    </div>
+    <h3 class="project-title">CalJam Activity Matcher</h3>
+    <p class="project-description">
+        React + TypeScript app linking daily tasks with Spotify playlists for music–activity matching. Includes an interactive dashboard with calendar logging and in-app playback via Spotify API.
+    </p>
+    <ul class="project-tags">
+        <li>React.js</li>
+        <li>TypeScript</li>
+        <li>Node.js</li>
+        <li>Spotify API</li>
+    </ul>
+</div>
+
+<div class="project-card">
+    <div class="project-header">
+        <div class="folder-icon">⏰</div>
+        <div class="project-links">
+            <a href="https://github.com/anchalbadhwar13" class="project-link" title="GitHub">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+        </div>
+    </div>
+    <h3 class="project-title">FPGA Digital Alarm Clock</h3>
+    <p class="project-description">
+        Implemented a functional alarm clock on an FPGA board using VHDL. Designed a Finite State Machine (FSM) for transitions between time setting and alarm management, ensuring accuracy through simulation.
+    </p>
+    <ul class="project-tags">
+        <li>VHDL</li>
+        <li>FPGA (DE10)</li>
+        <li>Quartus II</li>
+    </ul>
+</div>
+
+<div class="project-card">
+    <div class="project-header">
+        <div class="folder-icon">🎮</div>
+        <div class="project-links">
+            <a href="https://github.com/anchalbadhwar13" class="project-link" title="GitHub">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+        </div>
+    </div>
+    <h3 class="project-title">Pixel Birds Gaming Suite</h3>
+    <p class="project-description">
+        Collaborated in an Agile team to build a gaming suite featuring Angry Birds and Pacman variants. Focused on Java OOP principles and managed version control and sprint cycles for a unit-tested product.
+    </p>
+    <ul class="project-tags">
+        <li>Java</li>
+        <li>OOP</li>
+        <li>Agile / Scrum</li>
+        <li>JUnit</li>
+    </ul>
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-alt" id="experience">
+    <div class="container">
+        <h2 class="section-title"><span class="title-number">04.</span> technical experience()</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Jan 2025 - April 2025</span>
+                    <h3>Electro-Mechanical Tester Co-Op</h3>
+                    <p class="timeline-company">Algo Communications Ltd.</p>
+                    <p class="timeline-description">
+                        Programmed and tested 1000+ IoT devices/week using Lean and ESD standards. Diagnosed hardware/firmware failures, reducing defect rate by 30%. Automated data logging via Python, boosting throughput by 20%.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Jan 2024 - April 2024</span>
+                    <h3>Information Technology Intern</h3>
+                    <p class="timeline-company">Prime Asia TV/Radio</p>
+                    <p class="timeline-description">
+                        Configured Cisco 3500 switches, routers, and VLANs to optimize network reliability. Managed Active Directory access permissions and ensured 99.9% uptime for production software like NextGen and DJB Radio
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">May 2025 - Present</span>
+                    <h3>Vice President of Internal Affairs</h3>
+                    <p class="timeline-company">Women In Engineering (SFU)</p>
+                    <p class="timeline-description">
+                        Coordinate executive tasks with the Student Society and Faculty. Oversee logistics for 10+ annual STEM events, including budgeting and volunteer coordination.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Sep 2025 - Dec 2025</span>
+                    <h3>Engineering Science Peer Tutor</h3>
+                    <p class="timeline-company">SFU Engineering Science Student Society</p>
+                    <p class="timeline-description">
+                        Provide support for ENSC 204 students in SolidWorks and 3D modeling design strategies. Host weekly help nights for technical projects and course assignments.
+                    </p>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="section" id="projects">
-        <div class="container">
-            <h2 class="section-title"><span class="title-number">03.</span> projects()</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="folder-icon">📁</div>
-                        <div class="project-links">
-                            <a href="#" class="project-link" title="GitHub">
-                                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                            </a>
-                            <a href="#" class="project-link" title="External Link">
-                                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">Smart Home Controller</h3>
-                    <p class="project-description">
-                        ESP32-based home automation system with custom firmware, 
-                        featuring MQTT communication and a responsive web interface.
-                    </p>
-                    <ul class="project-tags">
-                        <li>C</li>
-                        <li>ESP32</li>
-                        <li>MQTT</li>
-                        <li>FreeRTOS</li>
-                    </ul>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="folder-icon">📁</div>
-                        <div class="project-links">
-                            <a href="#" class="project-link" title="GitHub">
-                                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                            </a>
-                            <a href="#" class="project-link" title="External Link">
-                                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">RISC-V Processor</h3>
-                    <p class="project-description">
-                        A simple 32-bit RISC-V processor implementation in Verilog, 
-                        synthesizable on FPGA with basic instruction set support.
-                    </p>
-                    <ul class="project-tags">
-                        <li>Verilog</li>
-                        <li>FPGA</li>
-                        <li>RISC-V</li>
-                        <li>Digital Design</li>
-                    </ul>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="folder-icon">📁</div>
-                        <div class="project-links">
-                            <a href="#" class="project-link" title="GitHub">
-                                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                            </a>
-                            <a href="#" class="project-link" title="External Link">
-                                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">Drone Flight Controller</h3>
-                    <p class="project-description">
-                        Custom flight controller firmware for quadcopters using 
-                        STM32 microcontroller with PID control and sensor fusion.
-                    </p>
-                    <ul class="project-tags">
-                        <li>C++</li>
-                        <li>STM32</li>
-                        <li>IMU</li>
-                        <li>PID</li>
-                    </ul>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="folder-icon">📁</div>
-                        <div class="project-links">
-                            <a href="#" class="project-link" title="GitHub">
-                                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                            </a>
-                            <a href="#" class="project-link" title="External Link">
-                                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">USB HID Keyboard</h3>
-                    <p class="project-description">
-                        Custom mechanical keyboard with programmable firmware, 
-                        featuring USB HID protocol implementation from scratch.
-                    </p>
-                    <ul class="project-tags">
-                        <li>C</li>
-                        <li>ATmega32U4</li>
-                        <li>USB</li>
-                        <li>HID</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section class="section section-alt" id="experience">
-        <div class="container">
-            <h2 class="section-title"><span class="title-number">04.</span> experience()</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2024 - Present</span>
-                        <h3>Embedded Systems Intern</h3>
-                        <p class="timeline-company">Tech Company Name</p>
-                        <p class="timeline-description">
-                            Developed firmware for IoT devices, implemented communication 
-                            protocols, and optimized power consumption for battery-powered systems.
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2023 - 2024</span>
-                        <h3>Research Assistant</h3>
-                        <p class="timeline-company">University Lab</p>
-                        <p class="timeline-description">
-                            Worked on FPGA-based signal processing systems and contributed 
-                            to research on low-power embedded architectures.
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2022 - Present</span>
-                        <h3>Computer Engineering Student</h3>
-                        <p class="timeline-company">Your University</p>
-                        <p class="timeline-description">
-                            Pursuing a degree in Computer Engineering with focus on 
-                            embedded systems, digital design, and computer architecture.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
+</section>
 
     <!-- Contact Section -->
     <section class="section" id="contact">
@@ -340,16 +401,16 @@
                     </div>
                     <div class="terminal-body">
                         <p><span class="prompt">$</span> echo $EMAIL</p>
-                        <p class="output">your.email@example.com</p>
+                        <p class="output">anchalbadhwar@gmail.com</p>
                         <p><span class="prompt">$</span> echo $LINKEDIN</p>
-                        <p class="output"><a href="#">linkedin.com/in/yourprofile</a></p>
+                        <p class="output"><a href="#">linkedin.com/in/anchal-badhwar</a></p>
                         <p><span class="prompt">$</span> echo $GITHUB</p>
-                        <p class="output"><a href="#">github.com/yourusername</a></p>
+                        <p class="output"><a href="#">github.com/anchalbadhwar13</a></p>
                         <p><span class="prompt">$</span> <span class="blink">_</span></p>
                     </div>
                 </div>
             </div>
-            <a href="mailto:your.email@example.com" class="btn btn-primary contact-btn">
+            <a href="mailto:anchalbadhwar@gmail.com" class="btn btn-primary contact-btn">
                 Send Message
             </a>
         </div>
