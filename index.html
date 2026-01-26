@@ -6,8 +6,14 @@
     <title>Anchal Badhwar | Computer Engineering</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    <!-- Work in Progress Notice -->
+    <div class="wip-banner">
+        <span class="wip-icon">🚧</span> This site is a work in progress. Stay tuned for updates! <span class="wip-icon">🚧</span>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-logo">
@@ -170,6 +176,9 @@
 <section class="section" id="projects">
     <div class="container">
         <h2 class="section-title"><span class="title-number">03.</span> projects()</h2>
+        
+        <!-- Technical Projects -->
+        <h3 class="subsection-title">// School Projects</h3>
         <div class="projects-grid">
             <div class="project-card">
                 <div class="project-header">
@@ -192,30 +201,68 @@
                 </ul>
             </div>
 
+            
             <div class="project-card">
                 <div class="project-header">
-                    <div class="folder-icon">📡</div>
+                    <div class="folder-icon">⚙️</div>
                 </div>
-                <h3 class="project-title">Smart Controller & OTA Engine</h3>
+                <h3 class="project-title">RISC-V Pipeline Simulator</h3>
                 <p class="project-description">
-                    Implemented a failsafe Over-The-Air (OTA) firmware update mechanism using Dual-Bank Flash Partitioning. Designed a Bootloader Rollback system with hardware Watchdog Timers.
+                    Developed a cycle-accurate RISC-V CPU simulator in C with cache and hazard mitigation features. Utilized Valgrind for memory profiling and leak detection.
                 </p>
                 <ul class="project-tags">
-                    <li>ESP32</li>
-                    <li>MQTT</li>
-                    <li>OTA Updates</li>
-                    <li>Watchdog Timers</li>
+                    <li>C</li>
+                    <li>GCC</li>
+                    <li>Valgrind</li>
+                    <li>Computer Architecture</li>
                 </ul>
             </div>
 
             <div class="project-card">
                 <div class="project-header">
+                    <div class="folder-icon">⏰</div>
+                </div>
+                <h3 class="project-title">FPGA Digital Alarm Clock</h3>
+                <p class="project-description">
+                    Implemented a functional alarm clock on an FPGA board using VHDL. Designed a Finite State Machine (FSM) for transitions between time setting and alarm management, ensuring accuracy through simulation.
+                </p>
+                <ul class="project-tags">
+                    <li>VHDL</li>
+                    <li>FPGA (DE10)</li>
+                    <li>Quartus II</li>
+                </ul>
+            </div>
+             <div class="project-card">
+                <div class="project-header">
+                    <div class="folder-icon">🎮</div>
+                </div>
+                <h3 class="project-title">Pixel Birds Gaming Suite</h3>
+                <p class="project-description">
+                    Collaborated in an Agile team to build a gaming suite featuring Angry Birds and Pacman variants. Focused on Java OOP principles and managed version control and sprint cycles for a unit-tested product.
+                </p>
+                <ul class="project-tags">
+                    <li>Java</li>
+                    <li>OOP</li>
+                    <li>Agile / Scrum</li>
+                    <li>JUnit</li>
+                </ul>
+            </div>  
+        </div>
+
+        <!-- Personal Projects -->
+        <h3 class="subsection-title">// Personal Projects</h3>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
                     <div class="folder-icon">💰</div>
                     <div class="project-links">
-                        <a href="#" class="project-link" title="Live Demo (Vercel)">
+                        <a href="https://github.com/anchalbadhwar13/CoinCoach" class="project-link" title="GitHub">
+                            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        </a>
+                        <a href="https://crypto-iq-inky.vercel.app/" class="project-link" title="Live Demo (Vercel)">
                             <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M24 22.525H0l12-21.05 12 21.05z"/></svg>
                         </a>
-                        <a href="#" class="project-link" title="YouTube Demo">
+                        <a href="https://www.youtube.com/watch?v=2upGImV0gHI" class="project-link" title="YouTube Demo">
                             <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                         </a>
                     </div>
@@ -234,108 +281,74 @@
 
             <div class="project-card">
                 <div class="project-header">
-                    <div class="folder-icon">⚙️</div>
+                    <div class="folder-icon">📡</div>
                 </div>
-                <h3 class="project-title">RISC-V Pipeline Simulator</h3>
+                <h3 class="project-title">Smart Controller & OTA Engine</h3>
                 <p class="project-description">
-                    Developed a cycle-accurate RISC-V CPU simulator in C with cache and hazard mitigation features. Utilized Valgrind for memory profiling and leak detection.
+                    Implemented a failsafe Over-The-Air (OTA) firmware update mechanism using Dual-Bank Flash Partitioning. Designed a Bootloader Rollback system with hardware Watchdog Timers.
                 </p>
                 <ul class="project-tags">
-                    <li>C</li>
-                    <li>GCC</li>
-                    <li>Valgrind</li>
-                    <li>Computer Architecture</li>
+                    <li>ESP32</li>
+                    <li>MQTT</li>
+                    <li>OTA Updates</li>
+                    <li>Watchdog Timers</li>
                 </ul>
             </div>
+
+
             <div class="project-card">
-    <div class="project-header">
-        <div class="folder-icon">🍔</div>
-        <div class="project-links">
-            <a href="https://github.com/anchalbadhwar13" class="project-link" title="GitHub">
-                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            </a>
-        </div>
-    </div>
-    <h3 class="project-title">Campus-Cravings Delivery App</h3>
-    <p class="project-description">
-       Built a campus-focused food delivery app with real-time ordering and payments. Features a dual-purpose model where students earn while picking up food and uses Leaflet API for mapping delivery locations.
-    </p>
-    <ul class="project-tags">
-        <li>Kotlin</li>
-        <li>Android Studio</li>
-        <li>Firebase DB</li>
-        <li>Leaflet API</li>
-    </ul>
-</div>
+                <div class="project-header">
+                    <div class="folder-icon">🍔</div>
+                    <div class="project-links">
+                        <a href="https://github.com/anchalbadhwar13/Campus-Cravings" class="project-link" title="GitHub">
+                            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <h3 class="project-title">Campus-Cravings Delivery App</h3>
+                <p class="project-description">
+                   Built a campus-focused food delivery app with real-time ordering and payments. Features a dual-purpose model where students earn while picking up food and uses Leaflet API for mapping delivery locations.
+                </p>
+                <ul class="project-tags">
+                    <li>Kotlin</li>
+                    <li>Android Studio</li>
+                    <li>Firebase DB</li>
+                    <li>Leaflet API</li>
+                </ul>
+            </div>
 
-<div class="project-card">
-    <div class="project-header">
-        <div class="folder-icon">🎵</div>
-        <div class="project-links">
-            <a href="https://github.com/anchalbadhwar13" class="project-link" title="GitHub">
-                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            </a>
-        </div>
-    </div>
-    <h3 class="project-title">CalJam Activity Matcher</h3>
-    <p class="project-description">
-        React + TypeScript app linking daily tasks with Spotify playlists for music–activity matching. Includes an interactive dashboard with calendar logging and in-app playback via Spotify API.
-    </p>
-    <ul class="project-tags">
-        <li>React.js</li>
-        <li>TypeScript</li>
-        <li>Node.js</li>
-        <li>Spotify API</li>
-    </ul>
-</div>
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="folder-icon">🎵</div>
+                    <div class="project-links">
+                        <a href="https://github.com/anchalbadhwar13/CalJam" class="project-link" title="GitHub">
+                            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <h3 class="project-title">CalJam Activity Matcher</h3>
+                <p class="project-description">
+                    React + TypeScript app linking daily tasks with Spotify playlists for music–activity matching. Includes an interactive dashboard with calendar logging and in-app playback via Spotify API.
+                </p>
+                <ul class="project-tags">
+                    <li>React.js</li>
+                    <li>TypeScript</li>
+                    <li>Node.js</li>
+                    <li>Spotify API</li>
+                </ul>
+            </div>
 
-<div class="project-card">
-    <div class="project-header">
-        <div class="folder-icon">⏰</div>
-        <div class="project-links">
-            <a href="https://github.com/anchalbadhwar13" class="project-link" title="GitHub">
-                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            </a>
-        </div>
-    </div>
-    <h3 class="project-title">FPGA Digital Alarm Clock</h3>
-    <p class="project-description">
-        Implemented a functional alarm clock on an FPGA board using VHDL. Designed a Finite State Machine (FSM) for transitions between time setting and alarm management, ensuring accuracy through simulation.
-    </p>
-    <ul class="project-tags">
-        <li>VHDL</li>
-        <li>FPGA (DE10)</li>
-        <li>Quartus II</li>
-    </ul>
-</div>
-
-<div class="project-card">
-    <div class="project-header">
-        <div class="folder-icon">🎮</div>
-        <div class="project-links">
-            <a href="https://github.com/anchalbadhwar13" class="project-link" title="GitHub">
-                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            </a>
-        </div>
-    </div>
-    <h3 class="project-title">Pixel Birds Gaming Suite</h3>
-    <p class="project-description">
-        Collaborated in an Agile team to build a gaming suite featuring Angry Birds and Pacman variants. Focused on Java OOP principles and managed version control and sprint cycles for a unit-tested product.
-    </p>
-    <ul class="project-tags">
-        <li>Java</li>
-        <li>OOP</li>
-        <li>Agile / Scrum</li>
-        <li>JUnit</li>
-    </ul>
-</div>
+           
         </div>
     </div>
 </section>
 
 <section class="section section-alt" id="experience">
     <div class="container">
-        <h2 class="section-title"><span class="title-number">04.</span> technical experience()</h2>
+        <h2 class="section-title"><span class="title-number">04.</span> experience()</h2>
+        
+        <!-- Technical Experience -->
+        <h3 class="subsection-title">// Technical Experience</h3>
         <div class="timeline">
             <div class="timeline-item">
                 <div class="timeline-marker"></div>
@@ -360,7 +373,11 @@
                     </p>
                 </div>
             </div>
+        </div>
 
+        <!-- Extracurricular -->
+        <h3 class="subsection-title">// Extracurricular</h3>
+        <div class="timeline">
             <div class="timeline-item">
                 <div class="timeline-marker"></div>
                 <div class="timeline-content">
@@ -381,6 +398,22 @@
                     <p class="timeline-company">SFU Engineering Science Student Society</p>
                     <p class="timeline-description">
                         Provide support for ENSC 204 students in SolidWorks and 3D modeling design strategies. Host weekly help nights for technical projects and course assignments.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Work Experience -->
+        <h3 class="subsection-title">// Work Experience</h3>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">June 2022 - Present</span>
+                    <h3>Customer Service Representative</h3>
+                    <p class="timeline-company">Booster Juice</p>
+                    <p class="timeline-description">
+                        Handle 100+ customer inquiries daily, maintaining a 98% satisfaction rate through excellent service. Train and assist new team members to ensure smooth operations and consistent service quality.
                     </p>
                 </div>
             </div>
@@ -421,6 +454,19 @@
             <a href="mailto:anchalbadhwar@gmail.com" class="btn btn-primary contact-btn">
                 Send Message
             </a>
+            
+            <!-- Social Icons -->
+            <div class="social-icons">
+                <a href="https://linkedin.com/in/anchal-badhwar" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/anchalbadhwar13" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:anchalbadhwar@gmail.com" class="social-icon" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
         </div>
     </section>
 
