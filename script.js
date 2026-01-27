@@ -184,3 +184,45 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// ============================================
+// Particle Background Animation
+// ============================================
+function createParticles() {
+    const container = document.getElementById('particles-container');
+    if (!container) return;
+    
+    const particleCount = 50;
+    const colors = ['#22d3ee', '#a855f7', '#10b981', '#ffffff'];
+    
+    for (let i = 0; i < particleCount; i++) {
+        createParticle(container, colors);
+    }
+}
+
+function createParticle(container, colors) {
+    const particle = document.createElement('div');
+    particle.className = 'particle';
+    
+    // Random properties
+    const size = Math.random() * 4 + 2;
+    const color = colors[Math.floor(Math.random() * colors.length)];
+    const left = Math.random() * 100;
+    const duration = Math.random() * 15 + 10;
+    const delay = Math.random() * 20;
+    
+    particle.style.cssText = `
+        width: ${size}px;
+        height: ${size}px;
+        background: ${color};
+        left: ${left}%;
+        animation-duration: ${duration}s;
+        animation-delay: ${delay}s;
+        box-shadow: 0 0 ${size * 2}px ${color};
+    `;
+    
+    container.appendChild(particle);
+}
+
+// Initialize particles
+createParticles();
