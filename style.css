@@ -1,18 +1,18 @@
 /* ============================================
-   CSS Variables - Easy to customize!
+   CSS Variables
    ============================================ */
 :root {
-    /* Colors - Change these to customize your theme */
-    --bg-primary: #0a0a0f;
-    --bg-secondary: #12121a;
-    --bg-card: #1a1a24;
-    --text-primary: #e4e4e7;
-    --text-secondary: #a1a1aa;
-    --text-muted: #71717a;
-    --accent-primary: #22d3ee;      /* Cyan - main accent */
-    --accent-secondary: #a855f7;    /* Purple - secondary accent */
-    --accent-tertiary: #10b981;     /* Green - for success/terminal */
-    --border-color: #27272a;
+    /* Colors */
+    --bg-primary: #0d1117;
+    --bg-secondary: #161b22;
+    --bg-card: #21262d;
+    --text-primary: #f0f6fc;
+    --text-secondary: #8b949e;
+    --text-muted: #6e7681;
+    --accent-primary: #58a6ff;
+    --accent-secondary: #388bfd;
+    --accent-tertiary: #79c0ff;
+    --border-color: #30363d;
     
     /* Spacing */
     --section-padding: 100px 0;
@@ -53,7 +53,7 @@ body {
    Work in Progress Banner
    ============================================ */
 .wip-banner {
-    background: linear-gradient(90deg, var(--accent-secondary), var(--accent-primary));
+    background: var(--accent-primary);
     color: var(--bg-primary);
     text-align: center;
     padding: 10px 20px;
@@ -64,10 +64,6 @@ body {
     left: 0;
     right: 0;
     z-index: 1001;
-}
-
-.wip-icon {
-    margin: 0 8px;
 }
 
 a {
@@ -161,43 +157,6 @@ ul {
     padding: 100px 50px;
     gap: 50px;
     position: relative;
-    overflow: hidden;
-}
-
-/* Particle Background */
-#particles-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    pointer-events: none;
-}
-
-.particle {
-    position: absolute;
-    border-radius: 50%;
-    pointer-events: none;
-    opacity: 0;
-    animation: floatParticle linear infinite;
-}
-
-@keyframes floatParticle {
-    0% {
-        opacity: 0;
-        transform: translateY(100vh) scale(0);
-    }
-    10% {
-        opacity: 1;
-    }
-    90% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        transform: translateY(-100px) scale(1);
-    }
 }
 
 .hero-content {
@@ -218,10 +177,7 @@ ul {
     font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 700;
     margin-bottom: 10px;
-    background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-primary) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--text-primary);
 }
 
 .hero-title {
@@ -497,13 +453,7 @@ ul {
 }
 
 .skill-category:hover {
-    border-color: var(--accent-primary);
     transform: translateY(-5px);
-}
-
-.skill-icon {
-    font-size: 2rem;
-    margin-bottom: 15px;
 }
 
 .skill-category h3 {
@@ -548,7 +498,6 @@ ul {
 
 .project-card:hover {
     transform: translateY(-5px);
-    border-color: var(--accent-primary);
 }
 
 .project-header {
@@ -556,10 +505,6 @@ ul {
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 20px;
-}
-
-.folder-icon {
-    font-size: 2.5rem;
 }
 
 .project-links {
@@ -600,7 +545,7 @@ ul {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.75rem;
     color: var(--accent-primary);
-    background: rgba(34, 211, 238, 0.1);
+    background: rgba(92, 158, 173, 0.1);
     padding: 4px 10px;
     border-radius: var(--radius-sm);
 }
@@ -694,14 +639,8 @@ ul {
 }
 
 .achievement-card:hover {
-    border-color: var(--accent-primary);
     transform: translateY(-5px);
-    box-shadow: 0 10px 40px rgba(34, 211, 238, 0.1);
-}
-
-.achievement-icon {
-    font-size: 2.5rem;
-    flex-shrink: 0;
+    box-shadow: 0 10px 40px rgba(88, 166, 255, 0.1);
 }
 
 .achievement-content {
@@ -846,7 +785,7 @@ ul {
     color: var(--bg-primary);
     border-color: var(--accent-primary);
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(34, 211, 238, 0.3);
+    box-shadow: 0 10px 30px rgba(88, 166, 255, 0.3);
 }
 
 /* ============================================

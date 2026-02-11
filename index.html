@@ -11,7 +11,7 @@
 <body>
     <!-- Work in Progress Notice -->
     <div class="wip-banner">
-        <span class="wip-icon">🚧</span> This site is a work in progress. Stay tuned for updates! <span class="wip-icon">🚧</span>
+        This site is a work in progress - stay tuned for updates!
     </div>
 
     <!-- Navigation -->
@@ -37,20 +37,18 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div id="particles-container"></div>
         <div class="hero-content">
-            <p class="hero-greeting">// Hello, World!</p>
+            <p class="hero-greeting">Hi, I'm</p>
             <h1 class="hero-name">Anchal Badhwar</h1>
             <div class="hero-title">
                 <span class="typing-text"></span><span class="cursor">|</span>
             </div>
-            <!--
             <p class="hero-description">
-                Computer Engineering student passionate about 
-                <span class="highlight">firmware</span>, 
-                <span class="highlight">embedded systems</span>, and 
+                Computer Engineering student at SFU. I like working on 
+                <span class="highlight">embedded systems</span>, 
+                <span class="highlight">firmware</span>, and 
                 <span class="highlight">low-level programming</span>.
-            </p> -->
+            </p>
             <div class="hero-buttons">
                 <a href="#projects" class="btn btn-primary">View Projects</a>
                 <a href="#contact" class="btn btn-secondary">Get in Touch</a>
@@ -65,16 +63,15 @@
                     <span class="filename">main.c</span>
                 </div>
                 <pre class="code-content">
-<span class="code-comment">// Initialize engineer</span>
-<span class="code-keyword">#include</span> <span class="code-string">&lt;passion.h&gt;</span>
-<span class="code-keyword">#include</span> <span class="code-string">&lt;creativity.h&gt;</span>
+<span class="code-keyword">#include</span> <span class="code-string">&lt;stdio.h&gt;</span>
 
-<span class="code-type">int</span> <span class="code-function">main</span>() {
-    <span class="code-type">Engineer</span> anchal;
-    anchal.<span class="code-property">init</span>();
-    anchal.<span class="code-property">learn</span>();
-    anchal.<span class="code-property">build</span>();
-    <span class="code-keyword">return</span> <span class="code-number">SUCCESS</span>;
+<span class="code-type">int</span> <span class="code-function">main</span>(<span class="code-type">void</span>) {
+    <span class="code-comment">// currently learning...</span>
+    printf(<span class="code-string">"firmware development\n"</span>);
+    printf(<span class="code-string">"embedded systems\n"</span>);
+    printf(<span class="code-string">"hardware debugging\n"</span>);
+    
+    <span class="code-keyword">return</span> <span class="code-number">0</span>;
 }</pre>
             </div>
         </div>
@@ -116,7 +113,6 @@
         <h2 class="section-title"><span class="title-number">02.</span> skills()</h2>
         <div class="skills-grid">
             <div class="skill-category">
-                <div class="skill-icon">⚡</div>
                 <h3>Languages</h3>
                 <ul class="skill-list">
                     <li>C / C++ (Firmware) </li>
@@ -127,7 +123,6 @@
                 </ul>
             </div>
             <div class="skill-category">
-                <div class="skill-icon">🔧</div>
                 <h3>Embedded & Hardware</h3>
                 <ul class="skill-list">
                     <li>ESP32 & BeagleBone-AI </li>
@@ -138,7 +133,6 @@
                 </ul>
             </div>
             <div class="skill-category">
-                <div class="skill-icon">☁️</div>
                 <h3>IT & Cloud</h3>
                 <ul class="skill-list">
                     <li>Azure Fundamentals (AZ-900) (in progress!!)</li>
@@ -148,7 +142,6 @@
                 </ul>
             </div>
             <div class="skill-category">
-                <div class="skill-icon">💻</div>
                 <h3>Software & Tools</h3>
                 <ul class="skill-list">
                     <li>Linux (Ubuntu/Debian) </li>
@@ -171,7 +164,6 @@
         <div class="projects-grid">
             <div class="project-card">
                 <div class="project-header">
-                    <div class="folder-icon">🚗</div>
                     <div class="project-links">
                         <a href="https://github.com/anchalbadhwar13/Road_Rhythm" class="project-link" title="GitHub">
                             <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
@@ -192,9 +184,6 @@
 
             
             <div class="project-card">
-                <div class="project-header">
-                    <div class="folder-icon">⚙️</div>
-                </div>
                 <h3 class="project-title">RISC-V Pipeline Simulator</h3>
                 <p class="project-description">
                     Developed a cycle-accurate RISC-V CPU simulator in C with cache and hazard mitigation features. Utilized Valgrind for memory profiling and leak detection.
@@ -208,9 +197,6 @@
             </div>
 
             <div class="project-card">
-                <div class="project-header">
-                    <div class="folder-icon">⏰</div>
-                </div>
                 <h3 class="project-title">FPGA Digital Alarm Clock</h3>
                 <p class="project-description">
                     Implemented a functional alarm clock on an FPGA board using VHDL. Designed a Finite State Machine (FSM) for transitions between time setting and alarm management, ensuring accuracy through simulation.
@@ -222,9 +208,6 @@
                 </ul>
             </div>
              <div class="project-card">
-                <div class="project-header">
-                    <div class="folder-icon">🎮</div>
-                </div>
                 <h3 class="project-title">Pixel Birds Gaming Suite</h3>
                 <p class="project-description">
                     Collaborated in an Agile team to build a gaming suite featuring Angry Birds and Pacman variants. Focused on Java OOP principles and managed version control and sprint cycles for a unit-tested product.
@@ -243,7 +226,6 @@
         <div class="projects-grid">
             <div class="project-card">
                 <div class="project-header">
-                    <div class="folder-icon">💰</div>
                     <div class="project-links">
                         <a href="https://github.com/anchalbadhwar13/CoinCoach" class="project-link" title="GitHub">
                             <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
@@ -269,9 +251,6 @@
             </div>
 
             <div class="project-card">
-                <div class="project-header">
-                    <div class="folder-icon">📡</div>
-                </div>
                 <h3 class="project-title">Smart Controller & OTA Engine</h3>
                 <p class="project-description">
                     Implemented a failsafe Over-The-Air (OTA) firmware update mechanism using Dual-Bank Flash Partitioning. Designed a Bootloader Rollback system with hardware Watchdog Timers.
@@ -287,7 +266,6 @@
 
             <div class="project-card">
                 <div class="project-header">
-                    <div class="folder-icon">🍔</div>
                     <div class="project-links">
                         <a href="https://github.com/anchalbadhwar13/Campus-Cravings" class="project-link" title="GitHub">
                             <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
@@ -308,7 +286,6 @@
 
             <div class="project-card">
                 <div class="project-header">
-                    <div class="folder-icon">🎵</div>
                     <div class="project-links">
                         <a href="https://github.com/anchalbadhwar13/CalJam" class="project-link" title="GitHub">
                             <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
@@ -339,6 +316,18 @@
         <!-- Technical Experience -->
         <h3 class="subsection-title">// Technical Experience</h3>
         <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Feb 2026 - Present</span>
+                    <h3>Firmware Developer</h3>
+                    <p class="timeline-company">SFU Robot Soccer</p>
+                    <p class="timeline-description">
+                        Developing firmware for autonomous soccer robots.
+                    </p>
+                </div>
+            </div>
+
             <div class="timeline-item">
                 <div class="timeline-marker"></div>
                 <div class="timeline-content">
@@ -416,7 +405,6 @@
             <h2 class="section-title"><span class="title-number">05.</span> achievements()</h2>
             <div class="achievements-grid">
                 <div class="achievement-card">
-                    <div class="achievement-icon">🏆</div>
                     <div class="achievement-content">
                         <h3 class="achievement-title">Dean's Honour Roll</h3>
                         <p class="achievement-org">Simon Fraser University</p>
